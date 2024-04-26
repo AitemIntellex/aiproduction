@@ -1,0 +1,67 @@
+.vscode
+*.egg-info
+*.pyc
+*.*~
+*.orig
+*.old
+.*.swp
+build
+dist
+MANIFEST
+_build
+_static
+.project
+.pydevproject
+.settings
+.DS_Store
+.svn
+.tox
+*.sqlite
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django stuff
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+node_modules
+
+# Virtual environment
+.venv
+.aitenv
+venv/
+ENV/
+env/
+.env
+.projenv
+staticfiles
+static
+
+
+migratiions
