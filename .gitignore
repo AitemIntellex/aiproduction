@@ -61,7 +61,7 @@ env/
 .env
 .projenv
 staticfiles
-static
 
 
-migratiions
+migrations
+/templates/admin/

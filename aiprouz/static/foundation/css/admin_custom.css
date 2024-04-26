@@ -1,0 +1,18 @@
+.form-row .field-box textarea,
+.form-row .field-content textarea {
+    background-color: #333;
+    /* Темный фон */
+    color: white;
+    /* Белый текст */
+    border: 1px solid #666;
+    /* Серая рамка */
+}
+
+textarea {
+    background-color: #333 !important;
+    /* Темный фон */
+    color: #fff !important;
+    /* Белый текст */
+    border: 1px solid #666 !important;
+    /* Слегка заметная граница */
+}
