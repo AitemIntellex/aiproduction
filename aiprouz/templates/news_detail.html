@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}{{ news_item.title }} | AiProduction{% endblock title %}
+{% block content %}
+    <h1>{{ news_item.title }}</h1>
+    <p>Опубликовано: {{ news_item.published_date }}</p>
+    <div>{{ news_item.content.html|safe }}</div>
+{% endblock %}

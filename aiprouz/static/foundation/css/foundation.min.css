@@ -1146,7 +1146,7 @@ button {
     }
 
     .large-6 {
-        width: 75%
+        width: 50%
     }
 
     .large-push-6 {
@@ -4066,7 +4066,7 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .title-bar {
-    background: #0a0a0a;
+    background: #0f355b;
     color: #fefefe;
     padding: .5rem
 }

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Breaking news | AiProduction{% endblock title %}
+{% block content %}
+    <h1>Новости</h1>
+    {% for news_item in news_list %}
+        <div class="news-item">
+            <h2>{{ news_item.title }}</h2>
+            <p>Опубликовано: {{ news_item.published_date|date:"d M Y H:i" }}</p>
+            <p>{{ news_item.description }}</p>
+            <div>{{ news_item.content.html|safe }}</div>
+            <a href="{{ news_item.source_url }}">Источник</a>
+        </div>
+    {% endfor %}
+{% endblock %}

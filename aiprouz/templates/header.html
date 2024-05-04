@@ -1,0 +1,38 @@
+<!-- Navigation -->
+<div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="realEstateMenu"></button>
+    <span class="title-bar-title">AiProduction</span>
+</div>
+<div class="top-bar" id="realEstateMenu">
+    <div class="top-bar-left">
+        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+            <li class="menu-text">AiProduction</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/team">Team</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="/news">News</a></li>
+            <li><a href="#">Interesting</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="#">Trading</a></li>
+            <li><a href="#">Forum</a></li>
+        </ul>
+    </div>
+    <div class="top-bar-right">
+        <ul class="menu">
+            {% block content %}
+    {% if user.is_authenticated %}
+        <p>Hi, {{ user.username }}!
+        {% if user.is_staff %}
+            <a href="{% url 'admin:index' %}">Go to dashboard</a></p>
+        {% endif %}
+    {% else %}
+        <p>You are not logged in.<a href="{% url 'login' %}">Sign in</a></p>
+    {% endif %}
+{% endblock %}
+        </ul>
+    </div>
+</div>
+<!-- /Navigation -->
+<br>
+{% include 'intro.html' %}

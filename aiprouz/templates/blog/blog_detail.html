@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}{{ post.title }} | AiProduction{% endblock title %}
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content.html|safe }}</p>
+    <p>Автор: {{ post.author }}<br>Опубликовано: {{ post.published_date }}</p>
+{% endblock %}
