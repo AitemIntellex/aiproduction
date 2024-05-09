@@ -64,3 +64,6 @@ urls.py
 /urls.py
 migrations
 /templates/admin/
+management
+/management
+.vscode

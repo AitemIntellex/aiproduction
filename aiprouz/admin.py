@@ -1,9 +1,10 @@
+# aitemintellex/aiprouz/admin.py
 from django.contrib import admin
 from django.utils import timezone
 from django.utils.html import format_html
 from django.urls import reverse
 from django_quill.fields import QuillField
-from django_quill.widgets import QuillWidget  # Добавьте этот импорт
+from django_quill.widgets import QuillWidget
 from aiprouz.models import (
     DailyReport, Page, BlogPost, ExternalNews
 )

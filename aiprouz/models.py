@@ -1,3 +1,4 @@
+# aitemintellex/aiprouz/models.py
 import os
 from django.conf import settings
 from django.db import models
@@ -51,10 +52,8 @@ def get_template_choices():
 
 class Page(models.Model):
     PAGE_CHOICES = [
-        ('home', 'Home'),
         ('team', 'Team'),
         ('service', 'Service'),
-        ('news', 'News'),
         ('interesting', 'Interesting'),
         ('events', 'Events'),
         ('blog', 'Blog'),

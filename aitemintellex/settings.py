@@ -8,10 +8,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = [aipro.uz]
 
-# AUTH_USER_MODEL = 'users.CustomUser'
+AUTH_USER_MODEL = 'users.CustomUser'
 # Application definition
 
 INSTALLED_APPS = [
@@ -23,8 +23,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # мои приложения
     'aiprouz',
+    'forum',
+    # 'misago',
+    'users',
+    'management',
     'django_quill',
-
     'rest_framework',
 ]
 

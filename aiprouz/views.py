@@ -1,3 +1,4 @@
+# aitemintellex/aiprouz/views.py
 from django.shortcuts import get_object_or_404, render
 from django.utils.translation import gettext
 from aiprouz.models import Page, BlogPost, ExternalNews

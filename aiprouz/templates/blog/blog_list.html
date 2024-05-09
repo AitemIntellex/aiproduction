@@ -2,8 +2,7 @@
 {% block title %}All blogposts in a row | AiProduction{% endblock title %}
 {% block content %}
     {% for post in page_obj %}
-        <div class="blog-post">
-            <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+            <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
             <p class="meta">Опубликовано: {{ post.published_date|date:"d M Y H:i" }}<br>Автор: {{ post.author }}</p>
             <div class="blog-content">
                 {{ post.content.html|safe|truncatewords_html:100 }}
